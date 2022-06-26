@@ -4,7 +4,8 @@ TARGET:=$(BINDIR)/$(NAME)
 FILES:=$(shell find . -type f -name '*.go' -print)
 
 _GOOS:=linux
-_GOARCH:=amd64
+#_GOARCH:=amd64
+_GOARCH:=arm
 
 .PHONY: build
 .PHONY: clean
